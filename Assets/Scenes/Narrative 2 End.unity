@@ -240,7 +240,7 @@ MonoBehaviour:
   scrollPos: {x: 311.18182, y: 72}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 784
+  blockViewHeight: 739
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -251,7 +251,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 143934793}
   selectedCommands:
-  - {fileID: 143934811}
+  - {fileID: 143934809}
   variables: []
   description: 
   stepPause: 0
@@ -293,8 +293,8 @@ MonoBehaviour:
   itemId: 3
   indentLevel: 0
   storyText: Perhatian semuanya, saya jelaskan hasil diskusi kita. Diputuskan bahwa
-    kita tidak akan mundur! Saya memohon bantuan teman-teman untuk memperkuat pertahanan
-    kita di sisi utara kota, persiapkan kantong-kantong gerilya.
+    kita tidak akan mundur! Saya minta untuk memperkuat pertahanan kita di sisi utara
+    kota, persiapkan kantong-kantong gerilya.
   description: 
   character: {fileID: 492621643}
   portrait: {fileID: 0}
@@ -355,7 +355,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &143934809
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  storyText: Kita lindungi kemerdekaan yang telah kita perjuangkan, jangan jadikan
+  storyText: Kita lindungi kemerdekaan yang telah kita perjuangkan. Jangan jadikan
     perjuangan kita selama ini sia-sia!
   description: 
   character: {fileID: 492621643}
@@ -383,7 +383,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &143934810
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -402,7 +402,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &143934811
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 492621644}
   - component: {fileID: 492621643}
   m_Layer: 0
-  m_Name: Kolonel Arudji
+  m_Name: Kolonel Nasution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Kolonel Arudji
+  nameText: Kolonel Nasution
   nameColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f637c5ce9d10e45c7855ed89bfc6b97e, type: 3}
   - {fileID: 8300000, guid: c53b7c20372e444c6bd7f2ac0729bbe2, type: 3}
   soundEffect: {fileID: 0}
-  inputSound: {fileID: 8300000, guid: 14a396b1562834718b2d52b9c4639264, type: 3}
+  inputSound: {fileID: 0}
 --- !u!114 &664612341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d15df989648af504387575de54bbb08b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd790233611418243ac70dcae1b74908, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1853,6 +1853,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1798947776
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7018305426483477776, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: indexMusic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477777, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_Name
+      value: ChangeMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018305426483477791, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a551da559074a984eadd6c31f65c33eb, type: 3}
 --- !u!1 &1940148481
 GameObject:
   m_ObjectHideFlags: 0

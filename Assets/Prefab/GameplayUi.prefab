@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 296641984024765618}
   - component: {fileID: 296641984024765621}
   - component: {fileID: 296641984024765620}
+  - component: {fileID: 2166437087853065634}
+  - component: {fileID: 5168381486642910292}
   m_Layer: 5
   m_Name: Button Main Menu
   m_TagString: Untagged
@@ -121,10 +123,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 5168381486642910292}
+        m_TargetAssemblyTypeName: StageButton, Assembly-CSharp
+        m_MethodName: OpenScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -133,6 +135,31 @@ MonoBehaviour:
           m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2166437087853065634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296641984024765622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2618c0c2d4fe5e4187c1845a615c03f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5168381486642910292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296641984024765622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8acac795088b96246b89c20a457e8e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: MainMenu
 --- !u!1 &296641984057070951
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &296641984557926078
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1122,7 +1149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &296641985190825549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1412,6 +1439,7 @@ GameObject:
   - component: {fileID: 296641985558758202}
   - component: {fileID: 296641985558758205}
   - component: {fileID: 296641985558758204}
+  - component: {fileID: 5491574336534920362}
   m_Layer: 5
   m_Name: Button Exit
   m_TagString: Untagged
@@ -1521,10 +1549,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 5491574336534920362}
+        m_TargetAssemblyTypeName: StageButton, Assembly-CSharp
+        m_MethodName: OpenScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1533,6 +1561,19 @@ MonoBehaviour:
           m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5491574336534920362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296641985558758206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8acac795088b96246b89c20a457e8e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: MainMenu
 --- !u!1 &296641985598591437
 GameObject:
   m_ObjectHideFlags: 0

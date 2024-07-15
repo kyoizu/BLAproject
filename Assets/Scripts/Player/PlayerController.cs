@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Movement();
+        Attack();
     }
 
     public void Attack()
@@ -74,14 +75,6 @@ public class PlayerController : MonoBehaviour
             melee.SetActive(false);
         }
     }
-
-    //public void Shoot() 
-    //{
-    //    if(Input.GetButtonDown("Fire"))
-    //    {
-    //        
-    //    }
-    //}
 
     public void Jump()
     {

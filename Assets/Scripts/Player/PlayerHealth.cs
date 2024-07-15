@@ -69,7 +69,6 @@ public class PlayerHealth : MonoBehaviour
                 Instantiate(deathEffect,transform.position,Quaternion.identity);
                 currentHealth = 0;
                 gameObject.SetActive(false);
-                Debug.Log("GAME OVER!");
                 OnPlayerDeath?.Invoke();
                 isGameover = true;
             }
@@ -81,10 +80,10 @@ public class PlayerHealth : MonoBehaviour
         if(currentHealth != maxHealth)
         {
             currentHealth += (float)HeartStatus.Full;
-            //if(FindObjectOfType<HealthHeart>().emptyHeart || FindObjectOfType<HealthHeart>().halfHeart)
-            //{
-            //    FindObjectOfType<HealthHeart>().SetHeartImage(HeartStatus.Full);
-            //}
+            if(FindObjectOfType<HealthHeart>().emptyHeart || FindObjectOfType<HealthHeart>().halfHeart)
+            {
+                FindObjectOfType<HealthHeart>().SetHeartImage(HeartStatus.Full);
+            }
             OnHealed?.Invoke();
         }
     }
@@ -93,7 +92,7 @@ public class PlayerHealth : MonoBehaviour
     {
         isImune = true;
         sprite.material = material.blink;
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.5f);
         sprite.material = material.original;
         isImune = false;
     }

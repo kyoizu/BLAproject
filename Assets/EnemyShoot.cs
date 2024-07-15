@@ -14,8 +14,6 @@ public class EnemyShoot : MonoBehaviour
     {
         enemyMov = gameObject.GetComponent<EnemyMovement>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         if(!canFire)
@@ -27,7 +25,6 @@ public class EnemyShoot : MonoBehaviour
                 timer = 0;
             }
         }
-
         if(canFire)
         {
             Shoot();

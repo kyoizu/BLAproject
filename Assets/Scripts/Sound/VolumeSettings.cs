@@ -12,7 +12,6 @@ public class VolumeSettings : MonoBehaviour
     [SerializeField] private Slider sfxSlider;
     [SerializeField] TMP_Text bgmVolText;
     [SerializeField] TMP_Text sfxVolText;
-    [SerializeField] private Toggle muteToggle;
 
     private void Start()
     {
@@ -64,25 +63,11 @@ public class VolumeSettings : MonoBehaviour
 
     void OnEnable()
     {
-        AudioListener.volume = PlayerPrefs.GetFloat("volume", 0);
+        AudioListener.volume = PlayerPrefs.GetFloat("volume", 1);
     }
 
     void OnDisable()
     {
         AudioListener.volume = PlayerPrefs.GetFloat("volume", 1);
-    }
-
-    public void MuteSound(bool value)
-    {
-        if(value)
-        {
-            AudioListener.volume = 0;
-        }
-        else
-        {
-            AudioListener.volume = 1;
-        }
-        PlayerPrefs.SetFloat("volume", AudioListener.volume);
-        PlayerPrefs.Save();
     }
 }

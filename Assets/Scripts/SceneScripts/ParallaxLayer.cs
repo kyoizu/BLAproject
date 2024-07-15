@@ -11,19 +11,10 @@ public class ParallaxLayer : MonoBehaviour
     {
         Vector3 newPos = transform.localPosition;
         newPos.x -= delta * horizontalParallaxFactor;
-        newPos.y -= deltaPlayerPosition.y * verticalParallaxFactor; // Apply vertical parallax
+        newPos.y -= deltaPlayerPosition.y * verticalParallaxFactor;
 
         transform.localPosition = newPos;
     }
 }
 
-    //[SerializeField ]float parallaxFactor;
-
-    //public void Move(float delta)
-    //{
-    //    Vector3 newPos = transform.localPosition;
-    //    newPos.x -= delta * parallaxFactor;
-    //    //newPos.y -= delta;
-    //    transform.localPosition = newPos;
-    //}
 

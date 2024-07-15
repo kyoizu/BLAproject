@@ -24,9 +24,6 @@ public class EnemyMovement : MonoBehaviour
             StartCoroutine(MoveEnemy());
         }
     }
-
-    
-
     private IEnumerator MoveEnemy()
     {
         while (true)
@@ -34,21 +31,16 @@ public class EnemyMovement : MonoBehaviour
             anim.SetBool("Nwalk", true);
             if (movingRight)
             {
-                // Move towards the right point
                 transform.position = Vector3.MoveTowards(transform.position, rightPoint, moveSpeed * Time.deltaTime);
                 transform.localScale = new Vector3(1f, 1f, 1f);
-
-                // Check if the enemy has reached the right point
                 if (transform.position == rightPoint)
                     movingRight = false;
             }
             else
             {
-                // Move towards the left point
                 transform.position = Vector3.MoveTowards(transform.position, leftPoint, moveSpeed * Time.deltaTime);
                 transform.localScale = new Vector3(-1f, 1f, 1f);
 
-                // Check if the enemy has reached the left point
                 if (transform.position == leftPoint)
                     movingRight = true;
             }

@@ -10,11 +10,6 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("LevelSelector");
     }
 
-    public void Setting()
-    {
-        SceneManager.LoadScene("Settings");
-    }
-
     public void Back()
     {
         SceneManager.LoadScene("MainMenu");
