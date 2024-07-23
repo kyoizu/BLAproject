@@ -16,5 +16,3 @@ public class ParallaxLayer : MonoBehaviour
         transform.localPosition = newPos;
     }
 }
-
-

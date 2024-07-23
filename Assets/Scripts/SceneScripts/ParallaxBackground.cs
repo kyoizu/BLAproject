@@ -16,15 +16,12 @@ public class ParallaxBackground : MonoBehaviour
 
         if (parallaxCamera != null)
             parallaxCamera.onCameraTranslate += Move;
-
-        // Find the player's transform (replace "Player" with your actual player object name or tag)
         playerTransform = GameObject.FindWithTag("Player").transform;
         lastPlayerPosition = playerTransform.position;
     }
 
     private void Move(float delta)
     {
-        // Calculate the movement of the player since the last frame
         deltaPlayerPosition = playerTransform.position - lastPlayerPosition;
 
         foreach (ParallaxLayer layer in transform.GetComponentsInChildren<ParallaxLayer>())
@@ -34,7 +31,7 @@ public class ParallaxBackground : MonoBehaviour
 
         lastPlayerPosition = playerTransform.position;
     }
-
+}
 
 
     //public ParallaxCamera parallaxCamera;
@@ -70,4 +67,3 @@ public class ParallaxBackground : MonoBehaviour
     //        layer.Move(delta);
     //    }
     //}
-}
